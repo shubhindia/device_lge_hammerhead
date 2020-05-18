@@ -8,6 +8,8 @@ $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
+# Bootanimation 
+TARGET_BOOT_ANIMATION_RES := 720
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hammerhead
@@ -21,3 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 M4B30Z 3437181 release-keys"
 
 BUILD_FINGERPRINT := google/hammerhead/hammerhead:6.0.1/M4B30Z/3437181:user/release-keys
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Shubh@m Gopale (shubhindia)"
