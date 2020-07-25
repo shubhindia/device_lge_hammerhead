@@ -154,6 +154,11 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/mpdecision|libshim_atomic.so \
     /system/lib/libril-qc-qmi-1.so|libshim_ril.so
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/lge/hammerhead \
+    hardware/qcom-caf/msm8974
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
