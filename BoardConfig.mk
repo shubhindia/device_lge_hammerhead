@@ -162,4 +162,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+# Broken Header Copying
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
