@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_hammerhead.mk
+    $(LOCAL_DIR)/statix_hammerhead.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_hammerhead-user \
-    aicp_hammerhead-userdebug \
-    aicp_hammerhead-eng
+    statix_hammerhead-user \
+    statix_hammerhead-userdebug \
+    statix_hammerhead-eng
