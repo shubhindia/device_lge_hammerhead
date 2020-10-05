@@ -33,7 +33,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=hammerhea
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
-BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+#BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -106,8 +106,12 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_ROOT_EXTRA_FOLDERS := firmware persist
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := lineageos_hammerhead_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+#TARGET_KERNEL_CONFIG := lineageos_hammerhead_defconfig
+#TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+
+# Prebuilt kernel
+TARGET_PREBUILT_KERNEL := device/lge/hammerhead-kernel/zImage
+BOARD_KERNEL_IMAGE_NAME := zImage
 
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
