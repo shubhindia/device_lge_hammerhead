@@ -39,8 +39,8 @@ LOCAL_C_INCLUDES += \
         $(call project-path-for,qcom-display)/libgralloc
 else
 LOCAL_C_INCLUDES += \
-        hardware/qcom/media/msm8974/libstagefrighthw \
-        hardware/qcom/display/msm8974/libgralloc
+        hardware/qcom-caf/msm8974/media/libstagefrighthw \
+        hardware/qcom-caf/msm8974/display/libgralloc
 endif
 
 LOCAL_HEADER_LIBRARIES := generated_kernel_headers
