@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_hammerhead.mk
+    $(LOCAL_DIR)/statix_hammerhead.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_hammerhead-user \
-    lineage_hammerhead-userdebug \
-    lineage_hammerhead-eng
+    statix_hammerhead-user \
+    statix_hammerhead-userdebug \
+    statix_hammerhead-eng
